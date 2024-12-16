@@ -51,6 +51,8 @@ function Navbar() {
       case 'home':
         navigate('/adminhome');
         break;
+      case 'admin':
+        navigate('/adminlogin')
       default:
         break;
     }
@@ -167,6 +169,12 @@ function Navbar() {
                 onClick={() => handleSectionChange('teacher')}
               >
                 Teacher
+              </button>
+              <button
+                className={`px-4 py-2 rounded ${selectedSection === 'admin' ? 'bg-blue-500' : 'bg-gray-600'} hover:bg-blue-600`}
+                onClick={() => handleSectionChange('admin')}
+              >
+                Admin
               </button>
             </>
           )}
