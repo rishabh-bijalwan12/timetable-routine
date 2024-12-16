@@ -12,7 +12,7 @@ function TeacherLogin() {
     setMessage('');
 
     try {
-      const response = await fetch('http://localhost:5000/login/teacher', {
+      const response = await fetch('https://timetable-routine-2.onrender.com/login/teacher', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

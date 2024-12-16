@@ -23,7 +23,7 @@ function TeacherRegister() {
     const teacherData = { name, email, password };
 
     try {
-      const response = await fetch('http://localhost:5000/teacher', {
+      const response = await fetch('https://timetable-routine-2.onrender.com/teacher', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

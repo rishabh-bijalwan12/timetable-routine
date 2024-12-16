@@ -12,7 +12,7 @@ function ClassDetails() {
     const fetchData = async () => {
       try {
 
-        const teacherResponse = await fetch('http://localhost:5000/GetTeacherData');
+        const teacherResponse = await fetch('https://timetable-routine-2.onrender.com/GetTeacherData');
         const teacherData = await teacherResponse.json();
         setTeachers(teacherData);
       } catch (error) {

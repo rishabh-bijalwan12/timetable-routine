@@ -63,7 +63,7 @@ function CreateClass() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const teacherResponse = await fetch('http://localhost:5000/GetTeacherData');
+        const teacherResponse = await fetch('https://timetable-routine-2.onrender.com/GetTeacherData');
         const teacherData = await teacherResponse.json();
         setTeachers(teacherData);
       } catch (error) {
@@ -92,7 +92,7 @@ function CreateClass() {
     };
 
     try {
-      const response = await fetch('http://localhost:5000/api/createClass', {
+      const response = await fetch('https://timetable-routine-2.onrender.com/api/createClass', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

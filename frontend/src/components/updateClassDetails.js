@@ -14,13 +14,13 @@ function UpdateClass({ classDetails, teachers, subjects, onClose, onUpdate }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setLoading(true); s
+    setLoading(true);
     const updatedClassData = {
       class_id: classDetails._id,
       routine,
     };
     try {
-      const response = await fetch('http://localhost:5000/api/updateClass', {
+      const response = await fetch('https://timetable-routine-2.onrender.com/api/updateClass', {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

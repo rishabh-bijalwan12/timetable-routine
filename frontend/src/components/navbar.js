@@ -22,7 +22,7 @@ function Navbar() {
 
     const fetchNotifications = async () => {
       try {
-        const response = await fetch('http://localhost:5000/notification');
+        const response = await fetch('https://timetable-routine-2.onrender.com/notification');
         const data = await response.json();
         setNotifications(data || []);
       } catch (error) {

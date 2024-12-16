@@ -7,7 +7,7 @@ function Home() {
   useEffect(() => {
     const fetchClassDetails = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/GetClassDetails');
+        const response = await fetch('https://timetable-routine-2.onrender.com/api/GetClassDetails');
         const data = await response.json();
         setClassData(data);
       } catch (error) {

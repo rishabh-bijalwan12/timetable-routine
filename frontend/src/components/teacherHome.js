@@ -13,7 +13,7 @@ function TeacherHome() {
     } else {
       const fetchTeacherDetails = async () => {
         try {
-          const response = await fetch(`http://localhost:5000/GetTeacherData/${teacherId}`);
+          const response = await fetch(`https://timetable-routine-2.onrender.com/GetTeacherData/${teacherId}`);
           const data = await response.json();
           setTeacherData(data);
         } catch (error) {
